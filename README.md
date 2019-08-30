@@ -3,7 +3,7 @@
 ## Class Information
 
 ### Textbooks
-- Th Go programming language by Alan A. A. Donovan, Brian W. Kernaghan.
+- The Go programming language by Alan A. A. Donovan, Brian W. Kernaghan.
 
 
 
