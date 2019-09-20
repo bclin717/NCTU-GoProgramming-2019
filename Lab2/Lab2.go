@@ -5,7 +5,7 @@ import (
 )
 
 func main() {
-	// Please complete the code to make this programm compiled without error.
+	// Please complete the code to make this program compiled without error.
 	// Notice that you can only add code in this file.
 
 	fmt.Println("1) Add")
