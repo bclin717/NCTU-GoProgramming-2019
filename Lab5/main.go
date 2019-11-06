@@ -11,11 +11,12 @@ import (
 
 func hello(w http.ResponseWriter, r *http.Request) {
 	fmt.Fprintf(w, "hello world!")
+	
 // 	pathParts := strings.SplitN(r.URL.Path, "/", -1)
-
-// 	operation := pathParts[1]
-// 	a, _ := strconv.Atoi(pathParts[2])
-// 	b, _ := strconv.Atoi(pathParts[3])
+	
+// 	operation := pathParts[?]
+// 	a, _ := strconv.Atoi(pathParts[?])
+// 	b, _ := strconv.Atoi(pathParts[?])
 
 // 	if operation == "add" {
 
@@ -31,6 +32,10 @@ func hello(w http.ResponseWriter, r *http.Request) {
 }
 
 func add(a, b int) int {
+	
+}
+
+func div(a, b int) int int {
 
 }
 
