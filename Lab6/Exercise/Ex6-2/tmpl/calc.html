@@ -1,0 +1,39 @@
+{{define "body"}}
+<br/>
+<div class="row justify-content-md-center">
+    <div class="card">
+        <h5 class="card-header">{{.Title}}</h5>
+        <div class="card-body">
+            <form action="/result" method="POST" name="calcForm" id="calcForm">
+                <div class="form-group">
+                    <label for="operand_1">Operand one</label>
+                    <input type="text" class="form-control" name="operand_1" id="operand_1" placeholder="Enter a operand">
+                </div>
+                <div class="form-group">
+                    <label for="operand_2">Operand two</label>
+                    <input type="text" class="form-control" name="operand_2" id="operand_2" placeholder="Enter a operand">
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="operator" id="inlineRadio_1" value="+" checked>
+                    <label class="form-check-label" for="inlineRadio_1">+</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="operator" id="inlineRadio_2" value="-">
+                    <label class="form-check-label" for="inlineRadio_2">-</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="operator" id="inlineRadio_3" value="*">
+                    <label class="form-check-label" for="inlineRadio_3">*</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="operator" id="inlineRadio_4" value="/">
+                    <label class="form-check-label" for="inlineRadio_4">/</label>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>
+</div>
+{{end}}

@@ -1,0 +1,21 @@
+{{define "body"}}
+<br/>
+<div class="row justify-content-md-center">
+    <div class="alert alert-success" role="alert">
+        <h4 class="alert-heading">
+        The result is {{.CalcResult}}
+        {{if ne .CalcRemainder ""}}
+            , remainder is {{.CalcRemainder}}
+        {{end}}
+    </h4>
+        <p>
+            {{.CalcProcess}} 
+            {{if ne .CalcRemainder ""}} 
+                ... {{.CalcRemainder}} 
+            {{end}}
+        </p>
+        <hr>
+        <p class="mb-0">Time: {{.Time}}</p>
+    </div>
+</div>
+{{end}}
