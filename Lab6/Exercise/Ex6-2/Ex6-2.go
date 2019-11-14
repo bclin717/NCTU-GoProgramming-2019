@@ -4,6 +4,7 @@ import (
 	"html/template"
 	"log"
 	"net/http"
+	"os"
 	"strconv"
 	"strings"
 	"time"
@@ -83,8 +84,12 @@ func resultHandler(w http.ResponseWriter, r *http.Request) {
 }
 
 func main() {
+	port := "8888"
+	if v := os.Getenv("PORT"); len(v) > 0 {
+		port = v
+	}
 	http.HandleFunc("/", homeHandler)
 	http.HandleFunc("/calc", calcHandler)
 	http.HandleFunc("/result", resultHandler)
-	log.Fatal(http.ListenAndServe(":80", nil))
+	log.Fatal(http.ListenAndServe(":"+port, nil))
 }
