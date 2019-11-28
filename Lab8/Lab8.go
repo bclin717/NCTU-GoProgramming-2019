@@ -65,6 +65,6 @@ func main() {
 	root = add(root, 4)
 	root = add(root, 1)
 
-	fmt.Println(root.String())
+	fmt.Println(root.String()) //result: [1 2 3 4 5]
 
 }
