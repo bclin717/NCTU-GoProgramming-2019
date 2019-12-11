@@ -15,14 +15,6 @@ var (
 type Host string
 type hostFlag struct{ Host }
 
-func (h *hostFlag) Set(s string) error {
-	// Implement the interface and parse the host name
-}
-
-func HostFlag(name string, host Host, usage string) *Host {
-	// Implement by yourself
-}
-
 func Init() {
 	flag.IntVar(&count, "c", 4, "Count")
 	// Define the other flags here
